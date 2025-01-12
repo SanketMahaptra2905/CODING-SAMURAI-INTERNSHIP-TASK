@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Brand<span>Name</span></div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Incredible Solutions</h1>
+                <p>Our product helps you achieve your goals faster with cutting-edge technology and innovative features.</p>
+                <button class="cta-button" onclick="scrollToSection('features')">Explore Now</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Speed</h3>
+                    <p>Get your work done quickly and efficiently.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Innovation</h3>
+                    <p>Stay ahead with our cutting-edge solutions.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Support</h3>
+                    <p>We’re here to help 24/7 with unmatched support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Section -->
+        <section id="signup" class="signup">
+            <h2>Join Our Community</h2>
+            <form id="signup-form">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 BrandName. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
