@@ -1,0 +1,156 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2e3440, #3b4252);
+    color: #eceff4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    background: rgba(46, 52, 64, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #88c0d0;
+}
+
+header p {
+    font-size: 1rem;
+    color: #81a1c1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form select, form input, form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form select {
+    background-color: #4c566a;
+    color: #eceff4;
+}
+
+form input {
+    background-color: #434c5e;
+    color: #eceff4;
+}
+
+form button {
+    background-color: #81a1c1;
+    color: #2e3440;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #5e81ac;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.controls input, .controls button {
+    flex: 1;
+    margin-right: 0.5rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #eceff4;
+    background-color: #4c566a;
+}
+
+.controls button {
+    margin-right: 0;
+    background-color: #bf616a;
+    color: #2e3440;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #d08770;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #434c5e, #4c566a);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.5s ease;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #616e88;
+}
+
+li .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #81a1c1;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+button.action-btn:hover {
+    color: #a3be8c;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
